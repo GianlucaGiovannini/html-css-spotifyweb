@@ -121,23 +121,24 @@ a {
 
 /* #region playlist */
 
+.add-playlist,
 .playlist {
     flex-direction: column;
-    overflow: auto;
     text-transform: capitalize;
 }
 
+.add-playlist a,
 .playlist a {
     color: var(--mid-grey);
     text-decoration: none;
 }
 
-.playlist>.plus {
+.add-playlist>.plus {
     align-items: center;
     margin-bottom: 23px;
 }
 
-.playlist .plus-false {
+.add-playlist .plus-false {
     margin: 0;
     background-color: var(--grey);
     color: black;
@@ -145,8 +146,8 @@ a {
     padding: 0px 10px;
 }
 
-.container-overflow {
-    flex-direction: column;
+.playlist {
+    overflow: auto;
 }
 
 .name-playlist {
@@ -166,6 +167,8 @@ a {
 }
 
 .user hr {
+    height: 1px;
+    border-color: var(--mid-grey);
     margin: 12px 0 14px
 }
 
@@ -235,7 +238,7 @@ a {
     overflow-y: auto;
 }
 
-.container>section {
+.container-card>section {
     margin-bottom: 39px;
 }
 
