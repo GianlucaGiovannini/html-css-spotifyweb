@@ -58,16 +58,26 @@ img {
 
 .aside-left {
     background-color: var(--black);
+    font-size: 0.81rem;
     width: 227px;
     height: 100%;
     padding: 20px;
     flex-direction: column;
 }
 
+.aside-left h3 {
+    color: var(--white);
+    font-size: 0.81rem;
+    text-transform: uppercase;
+}
+
 .aside-left span {
     color: var(--light-grey);
     margin-left: 0.56rem;
 }
+
+
+/* #region left-nav */
 
 #here>img {
     color: var(--light-grey);
@@ -95,6 +105,15 @@ img {
     margin-bottom: 0.81rem;
     align-items: flex-end;
 }
+
+
+/* #endregion left-nav */
+
+
+/* region playlist */
+
+
+/* #endregion playlist */
 
 
 /* #endregion aside */
