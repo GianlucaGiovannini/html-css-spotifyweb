@@ -21,7 +21,7 @@
 
     <main id="site_main" class="d-flex">
         <aside class="aside-left d-flex">
-            <a class="logo m-b30 p-lr-20 p-t20" href="#">
+            <a class="logo m-b30 p-lr-20 m-t20" href="#">
                 <img src="./assets/img/logo.svg" alt="Logo Spotify">
             </a>
             <!-- /.logo -->
@@ -115,6 +115,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/metal_lifting.jpg" alt="Albums heavy Metal">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Heavy metal</h4>
                             <span class="artist">Subtitle</span>
@@ -123,6 +126,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/stranger.jpeg" alt="Album Stranger things">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Stranger Things, vol.1 (a Netflix Original Series Soundtrack)</h4>
                             <span class="artist">Kyle Dixon & Michael Stein</span>
@@ -131,6 +137,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/aquietplace.jpeg" alt="Album Quet place">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>A quiet place</h4>
                             <span class="artist">Subtitle</span>
@@ -139,6 +148,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/split.jpeg" alt="Album Split">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Split</h4>
                             <span class="artist">Subtitle</span>
@@ -147,6 +159,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/cure.jpeg" alt="Albume A cure for Welness">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>A cure for welness</h4>
                             <span class="artist">Subtitle</span>
@@ -155,6 +170,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/metal_lifting.jpg" alt="Album Sinister">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Sinister</h4>
                             <span class="artist">Subtitle</span>
@@ -172,6 +190,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/radar.jpeg" alt="Album Radar">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Release Radar</h4>
                         </div>
@@ -179,6 +200,9 @@
                         <div class="card d-flex">
                             <a class="img-card">
                                 <img src="./assets/img/mixdaily.jpeg" alt="Album Daily mix">
+                                <div class="card-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Daily Mix 1</h4>
                         </div>
@@ -194,14 +218,20 @@
                     <div class="cards d-flex">
                         <div class="card d-flex">
                             <a class="img-card">
-                                <img src="./assets/img/youg.jpeg" alt="Album Lana del Rey">
+                                <img class="radius" src="./assets/img/youg.jpeg" alt="Album Lana del Rey">
+                                <div class="card-hover radius">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Release Radar</h4>
                         </div>
                         <!-- /.card -->
                         <div class="card d-flex">
                             <a class="img-card">
-                                <img src="./assets/img/einaudi.jpeg" alt="Album Ludovico Einaudi">
+                                <img class="radius" src="./assets/img/einaudi.jpeg" alt="Album Ludovico Einaudi">
+                                <div class="card-hover radius">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </a>
                             <h4>Daily Mix 1</h4>
                         </div>
@@ -212,13 +242,6 @@
                 <!-- /.artist -->
             </div>
             <!-- /.container-card -->
-
-
-
-
-
-
-
         </div>
         <!-- /#container -->
     </main>
@@ -269,7 +292,8 @@
             <!-- /.player -->
             <div class="time d-flex">
                 <span class="white">0:25</span>
-                <input type="range" min="2" max="427">
+                <div class="timeline"></div>
+                <input class="range" type="range" min="2" max="427">
                 <span class="white">4:25</span>
             </div>
             <!-- /.time -->
@@ -286,7 +310,7 @@
             <a href="#">
                 <i class="fa-solid fa-volume-high"></i>
             </a>
-            <input type="range" min="0" max="100">
+            <input class="range" type="range" min="0" max="100">
 
         </div>
         <!-- /.audio-screen -->
