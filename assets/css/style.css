@@ -24,7 +24,7 @@ a {
     --secondary-white: #FBFBFB;
     --bg-main: #141922;
     --bg-footer: #282828;
-    --darker-grey: #707070;
+    --account-grey: #808080;
     --dark-grey: #7D7F84;
     --mid-grey: #717171;
     --grey: #A3A3A3;
@@ -68,6 +68,7 @@ a {
     height: 100%;
     padding: 20px;
     flex-direction: column;
+    position: relative;
 }
 
 .aside-left h4 {
@@ -156,6 +157,45 @@ a {
 /* #endregion playlist */
 
 
+/* #region user */
+
+.user {
+    align-self: stretch;
+    margin-top: auto;
+    padding-bottom: 7px;
+}
+
+.user hr {
+    margin: 12px 0 14px
+}
+
+.user .instal a>i {
+    color: var(--mid-grey);
+    border: 1px solid var(--mid-grey);
+    border-radius: 50%;
+    padding: 3px 3px 1px
+}
+
+.account {
+    align-items: center;
+}
+
+#account-name {
+    font-size: 0.875rem;
+    color: var(--white);
+}
+
+.account img {
+    height: 25px;
+    width: 25px;
+    background-color: var(--account-grey);
+    border-radius: 50%;
+}
+
+
+/* #endregion user */
+
+
 /* #endregion aside */
 
 
@@ -165,7 +205,6 @@ a {
     width: 100%;
     height: 100%;
     flex-direction: column;
-    padding: 0 22px;
 }
 
 .container a {
@@ -189,6 +228,11 @@ a {
     height: 2px;
     align-self: center;
     margin-top: 6px;
+}
+
+.container>section {
+    padding: 0 22px;
+    margin-bottom: 39px;
 }
 
 .recently h2 {
@@ -227,6 +271,24 @@ a {
 .card>span {
     color: var(--dark-grey);
     font-size: 0.813rem;
+}
+
+.for-you>.cards {
+    justify-content: flex-start;
+}
+
+.for-you h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.for-you .description {
+    color: var(--dark-grey);
+    font-size: 0.813rem;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
 

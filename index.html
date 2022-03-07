@@ -11,11 +11,10 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- font awesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -37,7 +36,7 @@
                 </a>
                 <a class="left-library d-flex" href="#">
                     <img src="./assets/img/libreria.svg" alt="Image Search">
-                    <span>Cerca</span>
+                    <span>La tua libreria</span>
                 </a>
             </nav>
             <!-- /.nav-left m-b30 -->
@@ -65,16 +64,25 @@
                 <a href="#" class="name-playlist">
                     Nome Playlist
                 </a>
-
-                <div class="instal d-flex">
-                    <span class="icon">
+            </section>
+            <!-- /.playlist -->
+            <div class="user">
+                <div class="instal">
+                    <a href="#">
                         <i class="fa-solid fa-arrow-down"></i>
-                    </span>
-                    <span>Installa app</span>
+                        <span>Installa app</span>
+                    </a>
                 </div>
                 <!-- /.instal -->
+                <hr>
+                <div class="account d-flex">
+                    <img src="./assets/img/profile.svg" alt="Immagine account">
+                    <span id="account-name">John Doe</span>
+                </div>
+                <!-- /.account -->
 
-            </section>
+            </div>
+            <!-- /.user -->
         </aside>
         <!-- /#aside-left -->
 
@@ -148,14 +156,34 @@
                         <span class="artist">Subtitle</span>
                     </div>
                     <!-- /.card -->
-
-
-
-
                 </div>
                 <!-- /.cards -->
             </section>
             <!-- /.recently -->
+            <section class="for-you">
+                <h2>Creato per John Doe </h2>
+                <div class="description">Più ascolti, più accurati saranno i suggerimenti</div>
+                <!-- /.description -->
+                <div class="cards d-flex">
+                    <div class="card d-flex">
+                        <a class="img-card">
+                            <img src="./assets/img/radar.jpeg" alt="Album Radar">
+                        </a>
+                        <h4>Release Radar</h4>
+                    </div>
+                    <!-- /.card -->
+                    <div class="card d-flex">
+                        <a class="img-card">
+                            <img src="./assets/img/mixdaily.jpeg" alt="Album Daily mix">
+                        </a>
+                        <h4>Daily Mix 1</h4>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.cards -->
+            </section>
+            <!-- /.for you -->
+
 
 
 
