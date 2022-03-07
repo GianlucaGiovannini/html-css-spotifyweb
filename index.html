@@ -21,26 +21,26 @@
 
     <main id="site_main" class="d-flex">
         <aside class="aside-left d-flex">
-            <a class="logo m-b30" href="#">
+            <a class="logo m-b30 p-lr-20 p-t20" href="#">
                 <img src="./assets/img/logo.svg" alt="Logo Spotify">
             </a>
             <!-- /.logo -->
             <nav class="left-nav m-b30 ">
-                <a id="here" class="left-home d-flex" href="#">
+                <a id="here" class="left-home p-lr-20 d-flex" href="#">
                     <img src="./assets/img/home.svg" alt="Image Home">
                     <span>Home</span>
                 </a>
-                <a class="left-search d-flex" href="#">
+                <a class="left-search p-lr-20 d-flex" href="#">
                     <img src="./assets/img/search.svg" alt="Image Search">
                     <span>Cerca</span>
                 </a>
-                <a class="left-library d-flex" href="#">
+                <a class="left-library p-lr-20 d-flex" href="#">
                     <img src="./assets/img/libreria.svg" alt="Image Search">
                     <span>La tua libreria</span>
                 </a>
             </nav>
             <!-- /.nav-left m-b30 -->
-            <section class="add-playlist d-flex">
+            <section class="add-playlist p-lr-20 d-flex">
                 <h3>Playlist</h3>
                 <a class="plus d-flex" href="#">
                     <span class="plus-false">+</span>
@@ -48,7 +48,7 @@
                 </a>
             </section>
             <!-- /.add-playlist -->
-            <div class="playlist d-flex">
+            <div class="playlist p-lr-20 d-flex">
                 <a href="#" class="name-playlist">
                     Nome Playlist
                 </a>
@@ -69,9 +69,7 @@
                 </a>
             </div>
             <!-- /.playlist -->
-
-
-            <div class="user">
+            <div class="user p-lr-20">
                 <div class="instal">
                     <a href="#">
                         <i class="fa-solid fa-arrow-down"></i>
@@ -226,7 +224,76 @@
     </main>
     <!-- /#site_main -->
 
-    <footer id="site_footer"></footer>
+    <footer id="site_footer" class="d-flex">
+        <div class="left-album d-flex">
+            <a href="#" class="img-album">
+                <img src="./assets/img/sinister.jpeg" alt="Album sinister">
+            </a>
+
+            <div class="track-album">
+                <a href="#" class="name-album">Sinister</a>
+                <a href="#" class="track-name">Brano nome</a>
+            </div>
+
+            <div class="icon-album">
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-folder"></i>
+                </a>
+
+            </div>
+
+        </div>
+        <!-- /.album d-flex -->
+
+        <div class="input-track d-flex">
+            <div class="player d-flex">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-backward-step"></i>
+                </a>
+                <a href="#" class="play">
+                    <i class="fa-regular fa-circle-play"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-forward-step"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </a>
+            </div>
+            <!-- /.player -->
+            <div class="time d-flex">
+                <span class="white">0:25</span>
+                <input type="range" min="2" max="427">
+                <span class="white">4:25</span>
+            </div>
+            <!-- /.time -->
+        </div>
+        <!-- /.input-track -->
+
+        <div class="right-menu d-flex">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-tv"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-volume-high"></i>
+            </a>
+            <input type="range" min="0" max="100">
+
+        </div>
+        <!-- /.audio-screen -->
+
+
+
+    </footer>
     <!-- /#site_footer -->
 </body>
 
