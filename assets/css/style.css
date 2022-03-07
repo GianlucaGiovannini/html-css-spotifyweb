@@ -360,7 +360,11 @@ a {
 .card-hover {
     display: flex;
     color: white;
+<<<<<<< HEAD
     font-size: 80px;
+=======
+    font-size: 40px;
+>>>>>>> 4e2163a3dc4e794073e0494b8909bb3173c156bd
     background-color: rgba(00, 00, 00, 0.4);
     position: absolute;
     top: 0;
