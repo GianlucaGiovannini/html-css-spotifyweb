@@ -10,10 +10,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 :root {
     --black: #000000;
     --white: #FFFFFF;
-    --secondary-white: #FEFEFE;
+    --secondary-white: #FBFBFB;
     --bg-main: #141922;
     --bg-footer: #282828;
     --darker-grey: #707070;
@@ -33,6 +37,10 @@ body {
     display: flex;
 }
 
+.m-b30 {
+    margin-bottom: 30px;
+}
+
 
 /* #endregion utility */
 
@@ -46,20 +54,63 @@ body {
 }
 
 
-/* aside */
+/* #region aside */
 
 .aside-left {
     background-color: var(--black);
     width: 227px;
     height: 100%;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.aside-left span {
+    color: var(--light-grey);
+    margin-left: 0.56rem;
+}
+
+#here>img {
+    color: var(--light-grey);
+}
+
+#here>span {
+    color: var(--secondary-white);
+}
+
+.aside-left>.logo>img {
+    width: auto;
+    height: 2.5rem;
+}
+
+.left-nav {
+    flex-direction: column;
+}
+
+.left-nav img {
+    width: auto;
+    height: 1.375rem;
+}
+
+.left-nav div {
+    margin-bottom: 0.81rem;
+    align-items: flex-end;
 }
 
 
-/* container */
+/* #endregion aside */
+
+
+/* #region container */
 
 .container {
     width: 100%;
 }
+
+
+/* #endregion container */
+
+
+/* #region upgrade */
 
 .upgrade {
     width: 100%;
@@ -81,7 +132,8 @@ body {
     font-weight: 500;
 }
 
-.btn-upgrade {}
+
+/* #endregion upgrade */
 
 
 /* #endregion main */
