@@ -230,8 +230,12 @@ a {
     margin-top: 6px;
 }
 
-.container>section {
+.container-card {
     padding: 0 22px;
+    overflow-y: auto;
+}
+
+.container>section {
     margin-bottom: 39px;
 }
 
@@ -273,22 +277,28 @@ a {
     font-size: 0.813rem;
 }
 
-.for-you>.cards {
+.for-you>.cards,
+.artist>.cards {
     justify-content: flex-start;
 }
 
-.for-you h2 {
+.for-you h2,
+.artist h2 {
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 13px;
 }
 
-.for-you .description {
+.description {
     color: var(--dark-grey);
     font-size: 0.813rem;
     font-weight: 500;
     margin-bottom: 30px;
+}
+
+.artist .card img {
+    border-radius: 50%;
 }
 
 
