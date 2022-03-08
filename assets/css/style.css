@@ -142,6 +142,7 @@ a {
 
 .aside-left a:hover {
     color: white;
+    filter: brightness(2);
 }
 
 .left-nav a:hover {
