@@ -407,11 +407,10 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 98%;
     visibility: hidden;
     justify-content: center;
     align-items: center;
-    height: 98%;
 }
 
 .card:hover .card-hover {
