@@ -730,11 +730,11 @@ a {
         align-items: center;
     }
     .time input {
-        width: 140px;
+        width: 160px;
         margin: 0 10px;
     }
     .right-menu input {
-        width: 60px;
+        width: 70px;
     }
     .right-menu i {
         margin-right: 10px;
@@ -777,7 +777,7 @@ a {
         margin-right: 0;
     }
     .time input {
-        width: 100px;
+        width: 110px;
         margin: 0 10px;
     }
     .right-menu input {
@@ -914,6 +914,9 @@ a {
     .left-album img {
         display: none;
     }
+    .left-album .icon-album {
+        display: none;
+    }
     .track-album {
         display: flex;
         flex-direction: column;
@@ -933,11 +936,11 @@ a {
         transition: 0.5s;
     }
     .time input {
-        width: 75px;
+        width: 90px;
         margin: 0 10px;
     }
     .right-menu input {
-        width: 40px;
+        width: 50px;
     }
     .right-menu>a:nth-child(1),
     .right-menu>a:nth-child(2) {
