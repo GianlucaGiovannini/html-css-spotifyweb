@@ -1043,28 +1043,27 @@ a {
     }
 }
 
-
-/* 
-    .recently .cards {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        max-width: 380px;
-    }
-    .recently .cards .card a {
-        width: 227px;
-        height: auto;
-    } 
-*/
-
 @media screen and (max-width:380px) {
     .nav-content {
         font-size: 9px;
         gap: 4px 6px;
         padding-top: 10px;
     }
+    .recently .cards {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 200px;
+    }
+    .recently .cards .card a {
+        width: 227px;
+        height: auto;
+    }
     container-card>section {
         margin-bottom: 20px;
+    }
+    .upgrade {
+        display: none;
     }
     .recently {
         justify-content: flex-start;
