@@ -996,7 +996,7 @@ a {
         margin-bottom: 20px;
     }
     #site_footer {
-        padding: 0;
+        padding-right: 10px;
     }
     .left-album .name-album {
         color: var(--white);
