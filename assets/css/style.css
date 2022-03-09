@@ -8,6 +8,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 2000px;
+}
+
+footer {
+    max-width: 2000px;
 }
 
 img {
@@ -51,6 +56,10 @@ a {
 
 .m-t20 {
     margin-top: 20px;
+}
+
+.p-l-17 {
+    padding: 0 17px;
 }
 
 .p-lr-20 {
@@ -521,7 +530,7 @@ a {
 }
 
 .time input {
-    width: 427px;
+    width: 550px;
     margin: 0 28px;
 }
 
@@ -532,7 +541,7 @@ a {
 }
 
 .right-menu input {
-    width: 118px;
+    width: 150px;
 }
 
 .range {
@@ -600,6 +609,16 @@ a {
 
 
 /* #endregion footer */
+
+@media screen and (min-width: 1500px) {
+    .time input {
+        width: 700px;
+        margin: 0 20px;
+    }
+    .right-menu input {
+        width: 200px;
+    }
+}
 
 @media screen and (max-width:1200px) {
     .nav-content {
@@ -789,8 +808,11 @@ a {
 }
 
 @media screen and (max-width:480px) {
+    .p-l-17 {
+        padding: 0;
+    }
     .p-lr-20 {
-        padding: 0 0;
+        padding: 0;
     }
     .m-b30 {
         margin-bottom: 5px;
@@ -948,5 +970,41 @@ a {
     .right-menu>a:nth-child(1),
     .right-menu>a:nth-child(2) {
         display: none;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .nav-content {
+        font-size: 9px;
+        gap: 4px 6px;
+        padding-top: 10px;
+    }
+    .recently {
+        justify-content: flex-start;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .card {
+        width: calc(80%);
+        margin-bottom: 10px;
+    }
+    .card a {
+        position: relative;
+        display: block;
+        margin-bottom: 0;
+    }
+    .card>h4 {
+        font-size: 0.72rem;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .upgrade {
+        display: none;
+    }
+    .nav-content {
+        padding-top: 10px;
     }
 }
