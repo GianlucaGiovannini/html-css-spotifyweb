@@ -121,6 +121,25 @@ a {
 
 #here>img {
     color: var(--light-grey);
+    animation: here 10s ease infinite;
+}
+
+@keyframes here {
+    5% {
+        transform: scale(1.2);
+    }
+    7% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+    9% {
+        transform: rotate(20deg) scale(1.2);
+    }
+    11% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #here>span {
@@ -132,6 +151,31 @@ a {
     height: 2.5rem;
     background-image: url(./../img/logo.svg);
     background-repeat: no-repeat;
+    animation: bounce 5s ease 5s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+    5% {
+        transform: translateY(-15%);
+    }
+    10% {
+        transform: translateY(0%);
+    }
+    15% {
+        transform: translateY(-7%);
+    }
+    20% {
+        transform: translateY(0%);
+    }
+    25% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .left-nav {
@@ -307,6 +351,32 @@ a {
     height: 2px;
     align-self: center;
     margin-top: 6px;
+    animation: shake 10s ease infinite;
+}
+
+@keyframes shake {
+    0%,
+    {
+        transform: translateX(0);
+    }
+    2% {
+        transform: translateX(-10px);
+    }
+    4% {
+        transform: translateX(10px);
+    }
+    6% {
+        transform: translateX(-10px);
+    }
+    8% {
+        transform: translateX(10px);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 
