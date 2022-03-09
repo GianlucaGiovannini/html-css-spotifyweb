@@ -355,8 +355,7 @@ a {
 }
 
 @keyframes shake {
-    0%,
-    {
+    0% {
         transform: translateX(0);
     }
     2% {
@@ -1059,7 +1058,7 @@ a {
         width: 227px;
         height: auto;
     }
-    container-card>section {
+    .container-card>section {
         margin-bottom: 20px;
     }
     .recently {
