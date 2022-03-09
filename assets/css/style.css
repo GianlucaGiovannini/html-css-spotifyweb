@@ -151,7 +151,7 @@ a {
     height: 2.5rem;
     background-image: url(./../img/logo.svg);
     background-repeat: no-repeat;
-    animation: bounce 5s ease 5s infinite;
+    animation: bounce 5s ease infinite;
 }
 
 @keyframes bounce {
@@ -310,6 +310,7 @@ a {
     width: 100%;
     height: 100%;
     flex-direction: column;
+    overflow: auto;
 }
 
 .container a {
@@ -1049,10 +1050,21 @@ a {
         gap: 4px 6px;
         padding-top: 10px;
     }
-    .recently {
-        justify-content: flex-start;
+    .container-card>section {
+        margin-bottom: 20px;
     }
-    .cards {
+    .recently .cards {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 380px;
+    }
+    .recently .cards .card a {
+        width: 227px;
+        height: auto;
+    }
+    .for-you>.cards,
+    .artist>.cards {
         justify-content: center;
     }
     .card {
