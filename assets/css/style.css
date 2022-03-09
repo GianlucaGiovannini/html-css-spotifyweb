@@ -1053,7 +1053,7 @@ a {
         justify-content: flex-start;
         flex-wrap: nowrap;
         overflow-x: auto;
-        max-width: 200px;
+        max-width: 300px;
     }
     .recently .cards .card a {
         width: 227px;
@@ -1061,9 +1061,6 @@ a {
     }
     container-card>section {
         margin-bottom: 20px;
-    }
-    .upgrade {
-        display: none;
     }
     .recently {
         justify-content: flex-start;
