@@ -376,6 +376,9 @@ a {
 
 /* #endregion upgrade */
 
+
+/* #region  nav-content*/
+
 .nav-content {
     margin-bottom: 39px;
     justify-content: center;
@@ -386,6 +389,12 @@ a {
 .nav-content>a.d-flex {
     flex-direction: column;
 }
+
+
+/* #endregion  nav-content*/
+
+
+/* #region card */
 
 .container-card {
     padding: 0 10px 0 10px;
@@ -454,6 +463,9 @@ a {
     font-weight: 500;
     margin-bottom: 30px;
 }
+
+
+/* #endregion card */
 
 
 /* #endregion container */
