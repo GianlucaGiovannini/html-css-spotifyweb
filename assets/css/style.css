@@ -1092,7 +1092,7 @@ a {
         justify-content: center;
     }
     .card {
-        width: calc(80%);
+        width: 80%;
         margin-bottom: 10px;
     }
     .card a {

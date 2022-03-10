@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 4.5rem;
+}
+
 :root {
     --black: #000000;
     --white: #FFFFFF;
@@ -76,7 +80,7 @@ a {
 /* #region main */
 
 #site_main {
-    background-color: var(--bg-main);
+    background: linear-gradient(#585d58, #121212);
     width: 100%;
     height: calc(100vh - 90px);
 }
@@ -96,8 +100,8 @@ a {
 
 .aside-left h3 {
     color: var(--white);
-    font-size: 0.813rem;
-    text-transform: uppercase;
+    font-size: 1rem;
+    text-transform: capitalize;
     margin-bottom: 15px;
 }
 
@@ -210,29 +214,44 @@ a {
 
 /* #region playlist */
 
-.add-playlist,
+.btn-aside,
 .playlist {
     flex-direction: column;
     text-transform: capitalize;
 }
 
-.add-playlist a,
+.btn-aside a,
 .playlist a {
     color: var(--mid-grey);
     text-decoration: none;
 }
 
-.add-playlist>.plus {
+.btn-aside>.plus,
+.btn-aside>.like {
     align-items: center;
     margin-bottom: 23px;
 }
 
-.add-playlist .plus-false {
+.btn-aside>.like {
+    padding: 0 0 23px;
+    border-bottom: 1px outset var(--grey);
+}
+
+.btn-aside .plus-false {
     margin: 0;
     background-color: var(--grey);
     color: black;
     font-size: 1.875rem;
     padding: 0px 10px;
+}
+
+.btn-aside .liked {
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHVycGxlJTIwZ3JhZGllbnR8ZW58MHx8MHx8&w=1000&q=80);
+    background-size: cover;
+    color: var(--grey);
+    font-size: 1.2rem;
+    padding: 7px 9px;
 }
 
 .playlist {
@@ -279,6 +298,168 @@ a {
 .container a {
     color: var(--dark-grey);
 }
+
+
+/* #region playlist-track */
+
+.playlist-album {
+    background: linear-gradient(#7a847a, #404440);
+    height: 345px;
+    padding: 15px 30px 30px;
+    position: relative;
+    flex-direction: column;
+}
+
+.lateral-bar {
+    width: 15px;
+    height: 339px;
+    background-color: #b1b6b1;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.navigation-playlist {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-playlist a {
+    color: white;
+}
+
+.navigation-playlist .change-album i {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    background-color: #2b2d2b;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#bg-lighter {
+    background-color: #505450;
+}
+
+.btn-nav a {
+    background-color: #2b2d2b;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.upgrade {
+    padding: 4px 30px;
+    font-size: 0.9rem;
+    border: 1px solid white;
+}
+
+.account {
+    padding: 6.5px 3px;
+    font-size: 0.8rem;
+}
+
+.user-icon {
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+    vertical-align: top;
+}
+
+.account span:last-child {
+    font-size: 1rem;
+    vertical-align: bottom;
+    margin: 5px;
+}
+
+.listening {
+    height: 100%;
+    align-items: flex-end;
+    column-gap: 30px;
+}
+
+.album-listening img {
+    max-height: 225px;
+    box-shadow: 0 0 20px 0px #1d1c1c;
+}
+
+.title-listening.d-flex {
+    flex-direction: column;
+    row-gap: 15px;
+    color: white;
+}
+
+.user-small {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.user-small span {
+    color: #c5cdc5;
+}
+
+.playlist-track {
+    padding: 50px 15px 0;
+    flex-direction: column;
+}
+
+.track-top {
+    margin-bottom: 40px;
+}
+
+.track-top i {
+    font-size: 1.5rem;
+    color: black;
+    padding: 20px 23px;
+    background-color: #1ed760;
+    border-radius: 50%;
+}
+
+.track-top span {
+    font-size: 2rem;
+    letter-spacing: -3px;
+    margin-left: 30px;
+}
+
+
+/* track-bottom */
+
+.track-bottom {
+    padding-left: 24px;
+    flex-direction: column;
+}
+
+.general-info {
+    color: #c5cdc5;
+    font-size: 0.9rem;
+    width: 100%;
+    border-bottom: 1px solid #c5cdc5;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.track-bottom .number {
+    width: 2%;
+}
+
+.track-bottom .title {
+    width: 40%;
+}
+
+.track-bottom .album,
+.track-bottom .date {
+    width: 24%;
+}
+
+.track-bottom .time {
+    width: 10%;
+}
+
+.next-song {
+    margin: 20px 0;
+}
+
+
+/* #endregion playlist-track */
 
 
 /* #endregion container */
@@ -564,7 +745,7 @@ a {
     .left-nav span {
         display: none;
     }
-    .add-playlist {
+    .btn-aside {
         display: none;
     }
     .playlist {
