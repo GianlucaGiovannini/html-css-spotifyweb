@@ -8,11 +8,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 2000px;
-}
-
-footer {
-    max-width: 2000px;
 }
 
 img {
@@ -680,6 +675,16 @@ a {
 /* #endregion footer */
 
 @media screen and (min-width: 1500px) {
+    .upgrade {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .upgrade,
+    .nav-content,
+    .container-card>section {
+        max-width: 2000px;
+    }
     .time input {
         width: 700px;
         margin: 0 20px;
