@@ -144,7 +144,7 @@ a {
 .aside-left>.logo>.logo-img {
     width: auto;
     height: 2.5rem;
-    background-image: url(./../img/logo.svg);
+    background-image: url(./../../assets/img/logo.svg);
     background-repeat: no-repeat;
     animation: bounce 5s ease infinite;
 }
@@ -260,13 +260,7 @@ a {
 .user {
     align-self: stretch;
     margin-top: auto;
-    padding-bottom: 7px;
-}
-
-.user hr {
-    height: 1px;
-    border-color: var(--mid-grey);
-    margin: 12px 0 14px
+    padding-bottom: 20px;
 }
 
 .user .instal a>i {
@@ -274,22 +268,6 @@ a {
     border: 1px solid var(--mid-grey);
     border-radius: 50%;
     padding: 3px 3px 1px
-}
-
-.account {
-    align-items: center;
-}
-
-#account-name {
-    font-size: 0.875rem;
-    color: var(--white);
-}
-
-.account img {
-    height: 25px;
-    width: 25px;
-    background-color: var(--account-grey);
-    border-radius: 50%;
 }
 
 
@@ -519,8 +497,9 @@ a {
     position: fixed;
     left: 0;
     bottom: 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    column-gap: 8%;
 }
 
 
@@ -610,6 +589,10 @@ a {
     margin: 0 28px;
 }
 
+.right-menu {
+    /* margin-left: auto; */
+}
+
 .right-menu i {
     color: var(--white);
     margin-right: 18px;
@@ -686,11 +669,9 @@ a {
 
 /* #endregion footer */
 
-@media screen and (min-width: 1500px) {
-    .upgrade {
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
+@media screen and (min-width: 1800px) {
+    .time input {
+        width: 900px;
     }
     .upgrade,
     .nav-content,
@@ -700,24 +681,24 @@ a {
     #site_footer {
         max-width: 2210px;
     }
+}
+
+@media screen and (min-width: 1500px) {
     .time input {
         width: 700px;
-        margin: 0 20px;
     }
     .right-menu input {
         width: 200px;
     }
 }
 
-@media screen and (max-width:1200px) {
-    .nav-content {
-        padding: 0 15px;
-        margin-bottom: 39px;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px 24px;
-        text-transform: uppercase;
+@media screen and (min-width: 1800px) {
+    .time input {
+        width: 900px;
     }
+}
+
+@media screen and (max-width:1200px) {
     .track-album {
         margin-right: 10px;
     }
@@ -728,27 +709,9 @@ a {
     .right-menu input {
         width: 100px;
     }
-    .cards {
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        row-gap: 30px;
-    }
-    .card {
-        width: calc(100% / 5 - 15px);
-    }
 }
 
 @media screen and (max-width:1100px) {
-    .nav-content {
-        padding: 0 15px;
-        margin-bottom: 39px;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px 24px;
-        text-transform: uppercase;
-    }
     .track-album {
         margin-right: 10px;
     }
@@ -759,33 +722,9 @@ a {
     .right-menu input {
         width: 80px;
     }
-    .cards {
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        column-gap: 15px;
-        row-gap: 30px;
-    }
-    .card {
-        width: calc(100% / 4 - 15px);
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media screen and (max-width:800px) {
-    .container-card {
-        padding: 0 14px;
-    }
-    .card {
-        width: calc(100% / 4 - 15px);
-    }
-    .icon-album {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-    }
     .player {
         color: var(--white);
         column-gap: 15px;
@@ -801,41 +740,9 @@ a {
     }
 }
 
-@media screen and (max-width:768px) {
-    .container-card {
-        padding: 0 12px;
-    }
-    .card {
-        width: calc(100% / 3 - 15px);
-    }
-}
+@media screen and (max-width:768px) {}
 
 @media screen and (max-width:660px) {
-    .nav-content {
-        font-size: 14px;
-        gap: 10px 18px;
-    }
-    .container-card {
-        padding: 0 8px;
-    }
-    .card-hover {
-        font-size: 60px;
-    }
-    .recently h2 {
-        font-size: 1.3rem;
-    }
-    .card>h4 {
-        font-size: 0.85rem;
-        text-align: center;
-    }
-    .for-you h2,
-    .artist h2,
-    .card>span {
-        font-size: 0.79rem;
-    }
-    .description {
-        font-size: 0.79rem;
-    }
     .player {
         font-size: 1rem;
         align-items: center;
@@ -852,41 +759,9 @@ a {
     }
 }
 
-@media screen and (max-width:568px) {
-    .card {
-        width: calc(100% / 2 - 8px);
-    }
-    .left-album img {
-        margin-right: 12px;
-    }
-    .icon-album {
-        margin-left: 7px;
-    }
-    .left-album i {
-        margin-right: 0;
-    }
-}
+@media screen and (max-width:568px) {}
 
 @media screen and (max-width:540px) {
-    .nav-content {
-        font-size: 13px;
-        gap: 10px 15px;
-    }
-    .left-album img {
-        margin-right: 10px;
-    }
-    .track-album {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-right: 5px;
-    }
-    .icon-album {
-        margin-left: 0px;
-    }
-    .left-album i {
-        margin-right: 0;
-    }
     .time input {
         width: 110px;
         margin: 0 10px;
@@ -922,7 +797,7 @@ a {
     .aside-left>.logo>.logo-img {
         width: 1.5rem;
         height: 1.5rem;
-        background-image: url(./../img/logo-small.svg);
+        background-image: url(./../../img/logo-small.svg);
         margin-bottom: 15px;
     }
     .left-nav span {
@@ -962,81 +837,8 @@ a {
         font-size: 11px;
         text-transform: uppercase;
     }
-    .hr-active {
-        border-color: var(--active-green);
-        width: 30px;
-        height: 2px;
-        align-self: center;
-        margin-top: 3px;
-    }
-    .upgrade>a {
-        font-size: 0.6rem;
-        padding: 7px 15px;
-    }
-    .container-card {
-        padding: 0 8px;
-    }
-    .recently h2 {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-    .cards {
-        row-gap: 15px;
-    }
-    .card a {
-        position: relative;
-        display: block;
-        margin-bottom: 8px;
-    }
-    .card>h4 {
-        font-size: 0.65rem;
-        margin-bottom: 7px;
-    }
-    .card>span {
-        color: var(--dark-grey);
-        font-size: 0.6rem;
-        text-align: center;
-    }
-    .for-you>.cards,
-    .artist>.cards {
-        justify-content: flex-start;
-    }
-    .for-you h2,
-    .artist h2 {
-        color: var(--white);
-        font-size: 1rem;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
-    .description {
-        color: var(--dark-grey);
-        font-size: 0.75rem;
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
     #site_footer {
         padding-right: 10px;
-    }
-    .left-album .name-album {
-        color: var(--white);
-        font-size: 0.6rem;
-        font-weight: 500;
-    }
-    .left-album {
-        column-gap: 5px;
-    }
-    .left-album img {
-        display: none;
-    }
-    .left-album .icon-album {
-        display: none;
-    }
-    .track-album {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-right: 5px;
-        line-height: 14px;
     }
     .player {
         color: var(--white);
@@ -1062,55 +864,6 @@ a {
     }
 }
 
-@media screen and (max-width:380px) {
-    .nav-content {
-        font-size: 9px;
-        gap: 4px 6px;
-        padding-top: 10px;
-    }
-    .recently .cards {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        max-width: 300px;
-    }
-    .recently .cards .card a {
-        width: 227px;
-        height: auto;
-    }
-    .container-card>section {
-        margin-bottom: 20px;
-    }
-    .recently {
-        justify-content: flex-start;
-    }
-    .cards {
-        justify-content: center;
-    }
-    .for-you>.cards,
-    .artist>.cards {
-        justify-content: center;
-    }
-    .card {
-        width: calc(80%);
-        margin-bottom: 10px;
-    }
-    .card a {
-        position: relative;
-        display: block;
-        margin-bottom: 0;
-    }
-    .card>h4 {
-        font-size: 0.72rem;
-        margin-bottom: 5px;
-    }
-}
+@media screen and (max-width:380px) {}
 
-@media screen and (max-height: 400px) {
-    .upgrade {
-        display: none;
-    }
-    .nav-content {
-        padding-top: 10px;
-    }
-}
+@media screen and (max-height: 400px) {}
