@@ -875,7 +875,7 @@ h1 {
     .aside-left>.logo>.logo-img {
         width: 1.5rem;
         height: 1.5rem;
-        background-image: url(./../../img/logo-small.svg);
+        background-image: url(../../assets/img/logo-small.svg);
         margin-bottom: 15px;
     }
     .left-nav span {
